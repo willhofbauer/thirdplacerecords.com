@@ -43,8 +43,8 @@ export default function RootLayout({
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AAA%20Logo-PvRz5Iff1dscUdsdTER7o21Z4Le5o2.png"
               alt="Third Place Records Logo"
-              width={200}
-              height={100}
+              width={400}
+              height={200}
               priority
               className="h-auto mx-auto"
             />
