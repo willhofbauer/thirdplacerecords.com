@@ -10,7 +10,7 @@ export interface Release {
     appleMusic: string
     spotify: string
 }
-
+console.log("");
 // Function to get all releases from the content directory
 export function getReleases(): Release[] {
     const contentDir = path.join(process.cwd(), 'app/content/releases')
