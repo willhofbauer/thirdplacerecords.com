@@ -7,9 +7,9 @@ content:
   - name: releases
     label: Music Releases
     type: collection
-    path: app/work/content/releases
+    path: app/content/releases
     format: json
-    filename: '{fields.title}.json'
+    filename: '{fields.artist}-{fields.title}.json'
     icon: music
     fields:
       - name: title
