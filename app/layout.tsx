@@ -5,7 +5,7 @@ import "./globals.css"
 import Link from "next/link"
 import Image from "next/image"
 import { Instagram, Music, CloudIcon as SoundCloud } from "lucide-react"
-import BackgroundColorSwitcher from "./components/background-color-switcher"
+import BackgroundColorSwitcher from "./components/BackgroundColorSwitcher"
 
 // Initialize the Inter font
 const inter = Inter({ subsets: ["latin"] })

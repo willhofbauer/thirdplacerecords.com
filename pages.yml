@@ -1,0 +1,61 @@
+media:
+  input: public/images
+  output: /images
+  extensions: [jpg, jpeg, png, gif, svg]
+
+content:
+  - name: releases
+    label: Music Releases
+    type: collection
+    path: app/work/content/releases
+    format: json
+    filename: '{fields.title}.json'
+    icon: music
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: artist
+        label: Artist
+        type: string
+        required: true
+      - name: releaseDate
+        label: Release Date
+        type: date
+        required: true
+      - name: bandcamp
+        label: Bandcamp URL
+        type: string
+        required: true
+        pattern:
+          regex: '^https?:\/\/thirdplacerecords\.bandcamp\.com\/album\/[a-zA-Z0-9_-]+$'
+          message: 'Must be a valid Bandcamp URL'
+      - name: imageUrl
+        label: Image URL
+        type: string
+        required: true
+        pattern:
+          regex: '^https?:\/\/.+$'
+          message: 'Must be a valid URL starting with http:// or https://'
+      - name: appleMusic
+        label: Apple Music URL
+        type: string
+        required: true
+        pattern:
+          regex: '^https?:\/\/music\.apple\.com\/[a-zA-Z]{2}\/album\/[a-zA-Z0-9_-]+$'
+          message: 'Must be a valid Apple Music URL'
+      - name: spotify
+        label: Spotify URL
+        type: string
+        required: true
+        pattern:
+          regex: '^https?:\/\/open\.spotify\.com\/album\/[a-zA-Z0-9_-]+$'
+          message: 'Must be a valid Spotify URL'
+    view:
+      fields: [title, artist]
+      primary: title
+      sort: [year, title]
+      default:
+        sort: year
+        order: desc
