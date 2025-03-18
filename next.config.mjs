@@ -26,6 +26,11 @@ const nextConfig = {
         hostname: "hebbkx1anhila5yf.public.blob.vercel-storage.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "raw.githubusercontent.com", // Add GitHub domain here
+        port: "",
+      },
     ],
   },
 }
