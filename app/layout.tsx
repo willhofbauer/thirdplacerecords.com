@@ -38,7 +38,7 @@ export default function RootLayout({
         <BackgroundColorSwitcher />
 
         {/* Header with logo */}
-        <header className="container mx-auto px-4 py-0.5">
+        <header className="container mx-auto px-4 py-0">
           <Link href="/" className="block mx-auto w-fit hover:animate-wobble">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AAA%20Logo-PvRz5Iff1dscUdsdTER7o21Z4Le5o2.png"
@@ -46,7 +46,7 @@ export default function RootLayout({
               width={260}
               height={130}
               priority
-              className="h-auto mx-auto"
+              className="h-auto mx-auto my-0"
             />
           </Link>
         </header>
