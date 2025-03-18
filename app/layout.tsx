@@ -41,7 +41,7 @@ export default function RootLayout({
         <header className="container mx-auto px-4 py-0">
           <Link href="/" className="block mx-auto w-fit hover:animate-wobble">
             <Image
-              src="https://raw.githubusercontent.com/willhofbauer/thirdplacerecords.com/blob/main/public/website-logo.png?raw=true"
+              src="https://raw.githubusercontent.com/willhofbauer/thirdplacerecords.com/blob/main/public/website-logo.png"
               alt="Third Place Records Logo"
               width={260}
               height={130}
