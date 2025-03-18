@@ -43,7 +43,7 @@ content:
         type: string
         required: true
         pattern:
-          regex: '^https?:\/\/music\.apple\.com\/[a-zA-Z]{2}\/album\/[a-zA-Z0-9_-]+$'
+          regex: '^https?:\/\/music\.apple\.com\/[a-zA-Z]{2}\/album\/.+$'
           message: 'Must be a valid Apple Music URL'
       - name: spotify
         label: Spotify URL
