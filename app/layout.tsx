@@ -59,7 +59,7 @@ export default function RootLayout({
           <div className="container mx-auto px-4">
             <div className="flex flex-col items-center justify-center space-y-6">
               {/* Navigation links */}
-              <nav className="flex space-x-6">
+             {/* <nav className="flex space-x-6">
                 <Link
                   href="/"
                   className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
@@ -72,7 +72,7 @@ export default function RootLayout({
                 >
                   Contact
                 </Link>
-              </nav>
+              </nav> */}
 
               {/* Social media links */}
               <div className="flex space-x-6">
