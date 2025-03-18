@@ -38,7 +38,7 @@ export default function RootLayout({
         <BackgroundColorSwitcher />
 
         {/* Header with logo */}
-        <header className="container mx-auto px-4 py-1">
+        <header className="container mx-auto px-4 py-4">
            <Link href="/" className="block mx-auto w-fit hover:animate-wobble">
             <Image
               src="https://raw.githubusercontent.com/willhofbauer/thirdplacerecords.com/main/public/website-logo.png"
