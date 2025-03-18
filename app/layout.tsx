@@ -39,30 +39,20 @@ export default function RootLayout({
 
         {/* Header with logo */}
         <header className="container mx-auto px-4 py-0">
-            <a href="/" className="block mx-auto w-fit hover:animate-wobble">
-              <img
-                src="/website-logo.png"
-                alt="Third Place Records Logo"
-                width={260}
-                height={130}
-                className="h-auto mx-auto my-0"
-              />
-            </a>
-          
-          {/*  <Link href="/" className="block mx-auto w-fit hover:animate-wobble">
+           <Link href="/" className="block mx-auto w-fit hover:animate-wobble">
             <Image
-              src="/website-logo.png"
+              src="https://raw.githubusercontent.com/willhofbauer/thirdplacerecords.com/main/public/website-logo.png"
               {/* Old URLs commented out:
               src="https://qiumoxf8shroy7uq.public.blob.vercel-storage.com/website-logo-k7yjoNvspPHaHzio482xFfpmrgu3Jv.png"
               src="https://raw.githubusercontent.com/willhofbauer/thirdplacerecords.com/blob/main/public/website-logo.png"
-              
+              */}
               alt="Third Place Records Logo"
               width={260}
               height={130}
               priority
               className="h-auto mx-auto my-0"
             />
-          </Link> */}
+          </Link> 
         </header>
 
         {/* Main content area */}
