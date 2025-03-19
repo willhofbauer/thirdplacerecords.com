@@ -37,24 +37,41 @@ export default function RootLayout({
         {/* Component to switch background color */}
         <BackgroundColorSwitcher />
 
-        {/* Header with logo */}
-        <header className="container mx-auto px-4 py-4">
-           <Link href="/" className="block mx-auto w-fit hover:animate-wobble">
-            <Image
-              src="https://raw.githubusercontent.com/willhofbauer/thirdplacerecords.com/main/public/website-logo.png"
-              {/* Old URLs commented out:
-              src="https://qiumoxf8shroy7uq.public.blob.vercel-storage.com/website-logo-k7yjoNvspPHaHzio482xFfpmrgu3Jv.png"
-              src="https://raw.githubusercontent.com/willhofbauer/thirdplacerecords.com/blob/main/public/website-logo.png"
-              */}
-              alt="Third Place Records Logo"
-              width={260}
-              height={130}
-              priority
-              className="h-auto mx-auto my-0"
-            />
-          </Link> 
-        </header>
+       {/* Header with logo */}
+<header className="container mx-auto px-4 py-0">
+  <Link href="/" className="block mx-auto w-fit hover:animate-wobble">
+    <Image
+      src="https://raw.githubusercontent.com/willhofbauer/thirdplacerecords.com/main/public/website-logo.png"
+      alt="Third Place Records Logo"
+      width={260}
+      height={130}
+      priority
+      className="h-auto mx-auto my-0"
+    />
+  </Link>
+</header>
 
+{/* Add this new navigation section */}
+<nav className="container mx-auto flex justify-center space-x-4 mt-4 mb-8">
+  <Link
+    href="/"
+    className="inline-flex h-10 items-center justify-center rounded-full bg-blue-500 px-8 font-medium text-white transition-colors hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+  >
+    Home
+  </Link>
+  <Link
+    href="/releases"
+    className="inline-flex h-10 items-center justify-center rounded-full bg-blue-500 px-8 font-medium text-white transition-colors hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+  >
+    Releases
+  </Link>
+  <Link
+    href="/contact"
+    className="inline-flex h-10 items-center justify-center rounded-full bg-blue-500 px-8 font-medium text-white transition-colors hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+  >
+    Contact
+  </Link>
+</nav>
         {/* Main content area */}
         <div className="flex-grow mt-0 max-w-800px mx-auto">{children}</div>
 
