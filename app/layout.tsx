@@ -56,7 +56,7 @@ export default function RootLayout({
         </header>
 
         {/* Main content area */}
-        <div className="flex-grow mt-0 max-w-900px mx-auto">{children}</div>
+        <div className="flex-grow mt-0 max-w-800px mx-auto">{children}</div>
 
         {/* Footer */}
         <footer className="mt-auto border-t py-8 bg-white bg-opacity-50">
