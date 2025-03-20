@@ -22,7 +22,7 @@ export default function Releases() {
         <title>Third Place Records - Releases</title>
       </Head>
 
-      <section className="mb-12 px-10">
+      <section className="mb-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {releases.map((release, index) => (
             <ReleaseCard key={index} release={release} index={index} />
