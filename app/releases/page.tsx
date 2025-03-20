@@ -17,7 +17,7 @@ export default function Releases() {
   // Copy your existing release content from the current home page
   // This is a simplified example - you'll need to copy over your actual content
   return (
-    <main className="container px-4 mx-auto">
+    <div className="container px-4 mx-auto">
       <Head>
         <title>Third Place Records - Releases</title>
       </Head>
@@ -29,6 +29,6 @@ export default function Releases() {
           ))}
         </div>
       </section>
-    </main>
+    </div>
   );
 }

@@ -7,8 +7,8 @@ export interface Release {
     imageUrl: string
     releaseDate: string
     bandcamp: string
-    appleMusic: string
-    spotify: string
+    appleMusic?: string
+    spotify?: string
 }
 console.log("");
 // Function to get all releases from the content directory
