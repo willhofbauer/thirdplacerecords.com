@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 
 export default function SubscribeForm() {
@@ -5,7 +6,7 @@ export default function SubscribeForm() {
   const [name, setName] = useState("");
   const [subscribed, setSubscribed] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Add your form submission logic here
     setSubscribed(true);

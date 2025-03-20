@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Release } from "../data";
+import { Release } from "../releases/data";
 
 // Component to display a single release
 export default function ReleaseCard({ release, index }: { release: Release; index: number }) {
