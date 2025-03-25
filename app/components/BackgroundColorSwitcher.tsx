@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect } from "react"
-
+import { usePathname } from "next/navigation"
 // Array of pastel background colors
 const pastelColors = [
   "bg-[#FFE5E5]", // Pastel pink
@@ -17,6 +17,7 @@ const pastelColors = [
 ]
 
 export default function BackgroundColorSwitcher() {
+  const location = usePathname()
   useEffect(() => {
     // Select a random pastel color
     const randomColor = pastelColors[Math.floor(Math.random() * pastelColors.length)]
@@ -28,7 +29,7 @@ export default function BackgroundColorSwitcher() {
     return () => {
       document.body.classList.remove(randomColor)
     }
-  }, []) // Empty dependency array means this runs once on mount
+  }, [location]) // Empty dependency array means this runs once on mount
 
   return null // This component doesn't render anything visible
 }
