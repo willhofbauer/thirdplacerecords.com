@@ -14,9 +14,9 @@ export default function SubscribeForm() {
 
   return (
     <div className="w-full max-w-md mx-auto p-6 bg-white bg-opacity-50 rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-4 text-center">Join Our Mailing List</h2>
+      <h2 className="text-2xl font-bold mb-4 text-center">Join the Mailing List</h2>
       {subscribed ? (
-        <p className="text-center">Thanks for subscribing!</p>
+        <p className="text-center">Thanks !</p>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
