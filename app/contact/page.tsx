@@ -15,7 +15,7 @@ export default function Contact() {
       </Head>
 
       <div className="max-w-lg mx-auto bg-white bg-opacity-50 rounded-lg p-8 shadow-md">
-        <h1 className="text-2xl font-bold mb-4 text-center">Contact Us</h1>
+        <h1 className="text-2xl font-bold mb-4 text-center">Contact</h1>
         <p className="text-center text-xl">
           <a
             href="mailto:info@thirdplacerecords.com"
