@@ -20,9 +20,9 @@ export default function Contact() {
           For inquiries, please email:
         </p>
         <p className="text-center text-xl">
-          <a 
-            href="mailto:info@thirdplacerecords.com" 
-            className="text-blue-500 hover:underline"
+          <a
+            href="mailto:info@thirdplacerecords.com"
+            className="text-blue-500 hover:underline text-base md:text-2xl"
           >
             info@thirdplacerecords.com
           </a>
