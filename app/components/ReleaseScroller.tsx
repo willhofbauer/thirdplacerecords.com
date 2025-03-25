@@ -43,7 +43,7 @@ export default function ReleaseScroller({ releases }: ReleaseScrollerProps) {
                         className="flex-none w-36 sm:w-40 transform transition-all duration-300 hover:scale-105 hover:-rotate-2 hover:shadow-lg"
                     >
                         <div className="relative group">
-                            <div className="aspect-square relative overflow-hidden rounded-lg shadow-md border-2 sm:border-4 border-pink-400">
+                            <div className="aspect-square relative overflow-hidden rounded-lg shadow-md border-2 border-pink-400">
                                 <Image
                                     src={release.imageUrl || "/placeholder.svg"}
                                     alt={release.title}
@@ -55,7 +55,7 @@ export default function ReleaseScroller({ releases }: ReleaseScrollerProps) {
                             <div className="mt-1 sm:mt-2 text-xs">
                                 <p className="font-bold text-purple-800">{release.title}</p>
                                 <p className="text-pink-600">
-                                    {release.releaseDate}
+                                    {release.releaseDate.slice(0, 4)}
                                 </p>
                             </div>
                         </div>
