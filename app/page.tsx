@@ -23,7 +23,7 @@ export default function Home() {
       </Head>
 
       {/* Latest Releases Section with Horizontal Scroll */}
-      <section className="relative mb-12">
+      <section className="relative mb-4 md:mb-6">
         <h2 className="text-2xl font-bold mb-4 text-center">Latest Releases</h2>
         <ReleaseScroller releases={latestReleases} />
       </section>
@@ -31,11 +31,6 @@ export default function Home() {
       {/* Subscribe Form */}
       <section className="mb-12">
         <SubscribeForm />
-      </section>
-
-      {/* Label Information */}
-      <section className="text-center mb-12">
-        <p className="text-lg">A record label by Will Hofbauer</p>
       </section>
     </main>
   );

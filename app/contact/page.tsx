@@ -16,15 +16,12 @@ export default function Contact() {
 
       <div className="max-w-lg mx-auto bg-white bg-opacity-50 rounded-lg p-8 shadow-md">
         <h1 className="text-2xl font-bold mb-4 text-center">Contact Us</h1>
-        <p className="text-center mb-4">
-          For inquiries, please email:
-        </p>
         <p className="text-center text-xl">
           <a
             href="mailto:info@thirdplacerecords.com"
             className="text-blue-500 hover:underline text-base md:text-2xl"
           >
-            info@thirdplacerecords.com
+            will@thirdplacerecords.com
           </a>
         </p>
       </div>

@@ -16,7 +16,7 @@ export const NavLink: FC<NavLinkProps> = ({ href, children }) => {
         <Link
             href={href}
             className={
-                `inline-flex h-10 items-center justify-center rounded-full px-4 md:px-8 font-medium text-white transition-colors bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 ring-slate-400 ring-offset-2 ring-offset-slate-50 ${isActive && "ring-2"}`}
+                `hover:animate-wobble inline-flex h-10 items-center justify-center rounded-full px-4 md:px-8 font-medium text-white transition-colors bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 ring-slate-400 ring-offset-2 ring-offset-slate-50 ${isActive && "ring-2"}`}
         >
             {children}
         </Link>
