@@ -5,7 +5,7 @@ export function SoundCloudIcon({ className = "", size = 24 }: { className?: stri
             viewBox="0 0 24 24"
             width={size}
             height={size}
-            className="hover:fill-[#FF7700]"
+            className="hover:fill-[#FF7700] transition-colors duration-300"
             xmlns="http://www.w3.org/2000/svg"
         >
             <title>SoundCloud</title>

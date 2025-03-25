@@ -79,48 +79,46 @@ export default function RootLayout({
         <main className="w-full max-w-3xl mx-auto px-4 py-6 md:px-6 md:py-8">{children}</main>
 
         {/* Footer */}
-        <footer className="mt-auto border-t py-8 bg-white bg-opacity-50">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-col items-center justify-center space-y-6">
-              {/* Social media links */}
-              <div className="flex space-x-6">
-                <a
-                  href="https://soundcloud.com/thirdplacerecords"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
-                  aria-label="SoundCloud"
-                >
-                  <SoundCloudIcon className="fill-current" />
-                </a>
-                <a
-                  href="https://www.instagram.com/thirdplacerecords/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
-                  aria-label="Instagram"
-                >
-                  <InstagramIcon className="fill-current" />
-                </a>
-                <a
-                  href="https://thirdplacerecords.bandcamp.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
-                  aria-label="Bandcamp"
-                >
-                  <BandcampIcon />
-                </a>
-                <a
-                  href="https://www.discogs.com/label/1583957-Third-Place-Records"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
-                  aria-label="Discogs"
-                >
-                  <DiscogsIcon className="fill-current" />
-                </a>
-              </div>
+        <footer className="mt-auto fixed bottom-0 w-full backdrop-blur-md border-t py-4 bg-white bg-opacity-50">
+          <div className="flex flex-col items-center justify-cente ">
+            {/* Social media links */}
+            <div className="flex space-x-6">
+              <a
+                href="https://soundcloud.com/thirdplacerecords"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary hover:scale-125 transition-transform duration-300"
+                aria-label="SoundCloud"
+              >
+                <SoundCloudIcon />
+              </a>
+              <a
+                href="https://www.instagram.com/thirdplacerecords/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary hover:scale-125 transition-transform duration-300"
+                aria-label="Instagram"
+              >
+                <InstagramIcon />
+              </a>
+              <a
+                href="https://thirdplacerecords.bandcamp.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary hover:scale-125 transition-transform duration-300"
+                aria-label="Bandcamp"
+              >
+                <BandcampIcon />
+              </a>
+              <a
+                href="https://www.discogs.com/label/1583957-Third-Place-Records"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary hover:scale-125 transition-transform duration-300"
+                aria-label="Discogs"
+              >
+                <DiscogsIcon />
+              </a>
             </div>
           </div>
         </footer>

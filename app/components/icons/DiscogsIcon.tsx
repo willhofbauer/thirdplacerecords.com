@@ -5,7 +5,7 @@ export function DiscogsIcon({ size = 24 }: { size?: number }) {
             viewBox="0 0 24 24"
             width={size}
             height={size}
-            className="hover:fill-yellow-500"
+            className="hover:fill-yellow-500 transition-colors duration-300"
             xmlns="http://www.w3.org/2000/svg"
         >
             <title>Discogs</title>
