@@ -40,7 +40,7 @@ export default function RootLayout({
         <BackgroundColorSwitcher />
 
         {/* Header with logo */}
-        <header className="container mx-auto px-4 py-0">
+        <header className="container mx-auto px-4 pt-4">
           <Link href="/" className="block mx-auto w-fit hover:animate-wobble">
             <Image
               src="https://raw.githubusercontent.com/willhofbauer/thirdplacerecords.com/main/public/website-logo.png"
@@ -54,7 +54,7 @@ export default function RootLayout({
         </header>
 
         {/* Add this new navigation section */}
-        <nav className="container mx-auto flex justify-center space-x-4 mt-4 mb-8">
+        <nav className="container mx-auto flex justify-center space-x-4 mt-4">
           <Link
             href="/"
             className="inline-flex h-10 items-center justify-center rounded-full bg-blue-500 px-8 font-medium text-white transition-colors hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
