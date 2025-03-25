@@ -4,8 +4,11 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import Link from "next/link"
 import Image from "next/image"
-import { Instagram, Music, CloudIcon as SoundCloud } from "lucide-react"
 import BackgroundColorSwitcher from "./components/BackgroundColorSwitcher"
+import { SoundCloudIcon } from './components/icons/SoundCloudIcon'
+import { InstagramIcon } from './components/icons/InstagramIcon'
+import { BandcampIcon } from './components/icons/BandcampIcon'
+import { DiscogsIcon } from './components/icons/DiscogsIcon'
 
 // Initialize the Inter font
 const inter = Inter({ subsets: ["latin"] })
@@ -20,7 +23,6 @@ export const metadata: Metadata = {
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
     ],
-    apple: [{ url: "/apple-touch-icon.png" }],
   },
   generator: 'v0.dev'
 }
@@ -80,22 +82,6 @@ export default function RootLayout({
         <footer className="mt-auto border-t py-8 bg-white bg-opacity-50">
           <div className="container mx-auto px-4">
             <div className="flex flex-col items-center justify-center space-y-6">
-              {/* Navigation links */}
-              {/* <nav className="flex space-x-6">
-                <Link
-                  href="/"
-                  className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
-                >
-                  Home
-                </Link>
-                <Link
-                  href="/contact"
-                  className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
-                >
-                  Contact
-                </Link>
-              </nav> */}
-
               {/* Social media links */}
               <div className="flex space-x-6">
                 <a
@@ -105,7 +91,7 @@ export default function RootLayout({
                   className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
                   aria-label="SoundCloud"
                 >
-                  <SoundCloud className="h-6 w-6" />
+                  <SoundCloudIcon className="fill-current" />
                 </a>
                 <a
                   href="https://www.instagram.com/thirdplacerecords/"
@@ -114,7 +100,7 @@ export default function RootLayout({
                   className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
                   aria-label="Instagram"
                 >
-                  <Instagram className="h-6 w-6" />
+                  <InstagramIcon className="fill-current" />
                 </a>
                 <a
                   href="https://thirdplacerecords.bandcamp.com"
@@ -123,7 +109,16 @@ export default function RootLayout({
                   className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
                   aria-label="Bandcamp"
                 >
-                  <Music className="h-6 w-6" />
+                  <BandcampIcon />
+                </a>
+                <a
+                  href="https://www.discogs.com/label/1583957-Third-Place-Records"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
+                  aria-label="Discogs"
+                >
+                  <DiscogsIcon className="fill-current" />
                 </a>
               </div>
             </div>

@@ -2,7 +2,7 @@
 
 import { useEffect } from "react"
 import { usePathname } from "next/navigation"
-// Array of pastel background colors
+
 const pastelColors = [
   "bg-[#FFE5E5]", // Pastel pink
   "bg-[#E5FFFF]", // Pastel cyan
@@ -18,6 +18,7 @@ const pastelColors = [
 
 export default function BackgroundColorSwitcher() {
   const location = usePathname()
+
   useEffect(() => {
     // Select a random pastel color
     const randomColor = pastelColors[Math.floor(Math.random() * pastelColors.length)]
