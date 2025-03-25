@@ -9,6 +9,9 @@ import { SoundCloudIcon } from './components/icons/SoundCloudIcon'
 import { InstagramIcon } from './components/icons/InstagramIcon'
 import { BandcampIcon } from './components/icons/BandcampIcon'
 import { DiscogsIcon } from './components/icons/DiscogsIcon'
+import { Header } from "./components/Header"
+import { Navigation } from "./components/Navigation"
+import { Footer } from "./components/Footer"
 
 // Initialize the Inter font
 const inter = Inter({ subsets: ["latin"] })
@@ -36,92 +39,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} min-h-screen flex flex-col`}>
-        {/* Component to switch background color */}
         <BackgroundColorSwitcher />
 
-        {/* Header with logo */}
-        <header className="container mx-auto px-4 pt-4">
-          <Link href="/" className="block mx-auto w-fit hover:animate-wobble">
-            <Image
-              src="https://raw.githubusercontent.com/willhofbauer/thirdplacerecords.com/main/public/website-logo.png"
-              alt="Third Place Records Logo"
-              width={260}
-              height={130}
-              priority
-              className="h-auto mx-auto my-0"
-            />
-          </Link>
-        </header>
+        <Header />
 
-        {/* Add this new navigation section */}
-        <nav className="container mx-auto flex justify-center space-x-4 mt-4">
-          <Link
-            href="/"
-            className="inline-flex h-10 items-center justify-center rounded-full bg-blue-500 px-8 font-medium text-white transition-colors hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
-          >
-            Home
-          </Link>
-          <Link
-            href="/releases"
-            className="inline-flex h-10 items-center justify-center rounded-full bg-blue-500 px-8 font-medium text-white transition-colors hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
-          >
-            Releases
-          </Link>
-          <Link
-            href="/contact"
-            className="inline-flex h-10 items-center justify-center rounded-full bg-blue-500 px-8 font-medium text-white transition-colors hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
-          >
-            Contact
-          </Link>
-        </nav>
+        <Navigation />
 
-        {/* Main content area */}
         <main className="w-full max-w-3xl mx-auto px-4 py-6 md:px-6 md:py-8">{children}</main>
 
-        {/* Footer */}
-        <footer className="mt-auto fixed bottom-0 w-full backdrop-blur-md border-t py-4 bg-white bg-opacity-50">
-          <div className="flex flex-col items-center justify-cente ">
-            {/* Social media links */}
-            <div className="flex space-x-6">
-              <a
-                href="https://soundcloud.com/thirdplacerecords"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary hover:scale-125 transition-transform duration-300"
-                aria-label="SoundCloud"
-              >
-                <SoundCloudIcon />
-              </a>
-              <a
-                href="https://www.instagram.com/thirdplacerecords/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary hover:scale-125 transition-transform duration-300"
-                aria-label="Instagram"
-              >
-                <InstagramIcon />
-              </a>
-              <a
-                href="https://thirdplacerecords.bandcamp.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary hover:scale-125 transition-transform duration-300"
-                aria-label="Bandcamp"
-              >
-                <BandcampIcon />
-              </a>
-              <a
-                href="https://www.discogs.com/label/1583957-Third-Place-Records"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary hover:scale-125 transition-transform duration-300"
-                aria-label="Discogs"
-              >
-                <DiscogsIcon />
-              </a>
-            </div>
-          </div>
-        </footer>
+        <Footer />
       </body>
     </html>
   )

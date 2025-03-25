@@ -31,7 +31,7 @@ export default function ReleaseScroller({ releases }: ReleaseScrollerProps) {
             </button>
             <div
                 ref={scrollContainerRef}
-                className="flex overflow-x-auto space-x-4 pb-4 scrollbar-hide"
+                className="flex overflow-x-auto space-x-4 p-4 scrollbar-hide"
                 style={{ scrollBehavior: "smooth" }}
             >
                 {releases.map((release, index) => (
