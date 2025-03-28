@@ -53,8 +53,8 @@ export default function ReleaseScroller({ releases }: ReleaseScrollerProps) {
                                 />
                             </div>
                             <div className="mt-1 sm:mt-2 text-xs">
-                                <p className="font-bold text-purple-800">{release.title}</p>
-                                <p className="text-pink-600">
+                                <p className="font-bold text-black-800">{release.title}</p>
+                                <p className="text-red-600">
                                     {release.releaseDate.slice(0, 4)}
                                 </p>
                             </div>
@@ -64,7 +64,7 @@ export default function ReleaseScroller({ releases }: ReleaseScrollerProps) {
             </div>
             <button
                 onClick={() => handleScroll("right")}
-                className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-pink-300/80 text-purple-800 rounded-full p-2 hover:bg-pink-400/80 transition-colors"
+                className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-red-300/80 text-black-800 rounded-full p-2 hover:bg-pink-400/80 transition-colors"
                 aria-label="Scroll right"
             >
                 →
