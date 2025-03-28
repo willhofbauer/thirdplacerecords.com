@@ -24,7 +24,7 @@ export default function ReleaseScroller({ releases }: ReleaseScrollerProps) {
         <div className="relative">
             <button
                 onClick={() => handleScroll("left")}
-                className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-red-300/80 text-black-800 rounded-full p-2 hover:bg-pink-400/80 transition-colors"
+                className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-red-300/80 text-black-800 rounded-full p-2 hover:bg-red-400/80 transition-colors"
                 aria-label="Scroll left"
             >
                 ←
@@ -64,7 +64,7 @@ export default function ReleaseScroller({ releases }: ReleaseScrollerProps) {
             </div>
             <button
                 onClick={() => handleScroll("right")}
-                className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-red-300/80 text-black-800 rounded-full p-2 hover:bg-pink-400/80 transition-colors"
+                className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-red-300/80 text-black-800 rounded-full p-2 hover:bg-red-400/80 transition-colors"
                 aria-label="Scroll right"
             >
                 →
